@@ -1,0 +1,39 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+input {
+  border-radius: 5px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #0f0f0f;
+  border: solid 0.5px;
+  width: -webkit-fill-available;
+}
+
+label{
+  font-size: larger;
+  font-weight: 500;
+  margin-left: -370px;
+}
+
+.submit-btn {
+  color: white;
+  background-color: #396cd8;
+  border-radius: 8px;
+  border: 1px solid #396cd8;
+  padding: 1.2em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  height: 60px;
+  width: -webkit-fill-available;
+  text-decoration: none;
+}
