@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 
+
 export default function Admin() {
   return (
     <>
@@ -77,41 +78,49 @@ export default function Admin() {
             id="sidenav-collapse-main"
           >
             <ul className="navbar-nav">
-              <li className="nav-item" style={{cursor: "pointer"}}>
+              <li className="nav-item" style={{ cursor: "pointer" }}>
                 <a
                   className="nav-link"
                   target="_blank"
-                  onClick= { () => {changePage('dashboard')}}
+                  onClick={() => {
+                    changePage("dashboard");
+                  }}
                 >
                   <i className="fas fa-chart-line" style={{ fontSize: 15 }} />
                   <span className="nav-link-text ms-2 ps-1">Dashboard</span>
                 </a>
               </li>
-              <li className="nav-item" style={{cursor: "pointer"}}>
+              <li className="nav-item" style={{ cursor: "pointer" }}>
                 <a
                   className="nav-link"
                   target="_blank"
-                  onClick={ () => {changePage('stocks')}}
+                  onClick={() => {
+                    changePage("stocks");
+                  }}
                 >
                   <i className="fas fa-cubes" style={{ fontSize: 15 }} />
                   <span className="nav-link-text ms-2 ps-1">Stocks</span>
                 </a>
               </li>
-              <li className="nav-item" style={{cursor: "pointer"}}>
+              <li className="nav-item" style={{ cursor: "pointer" }}>
                 <a
                   className="nav-link"
                   target="_blank"
-                  onClick={ () => {changePage('sales')}}
+                  onClick={() => {
+                    changePage("sales");
+                  }}
                 >
                   <i className="fas fa-store" style={{ fontSize: 15 }} />
                   <span className="nav-link-text ms-2 ps-1">Sales</span>
                 </a>
               </li>
-              <li className="nav-item" style={{cursor: "pointer"}}>
+              <li className="nav-item" style={{ cursor: "pointer" }}>
                 <a
                   className="nav-link"
                   target="_blank"
-                  onClick={() => {changePage('dispatch')}}
+                  onClick={() => {
+                    changePage("dispatch");
+                  }}
                 >
                   <i
                     className="fas fa-truck-ramp-box"
@@ -120,21 +129,25 @@ export default function Admin() {
                   <span className="nav-link-text ms-2 ps-1">Dispatch</span>
                 </a>
               </li>
-              <li className="nav-item" style={{cursor: "pointer"}}>
+              <li className="nav-item" style={{ cursor: "pointer" }}>
                 <a
                   className="nav-link"
                   target="_blank"
-                  onClick={ () => {changePage('staffs')}}
+                  onClick={() => {
+                    changePage("staffs");
+                  }}
                 >
                   <i className="fas fa-user-group" style={{ fontSize: 15 }} />
                   <span className="nav-link-text ms-2 ps-1">Staff</span>
                 </a>
               </li>
-              <li className="nav-item" style={{cursor: "pointer"}}>
+              <li className="nav-item" style={{ cursor: "pointer" }}>
                 <a
                   className="nav-link"
                   target="_blank"
-                  onClick={ () => {changePage('invoice')}}
+                  onClick={() => {
+                    changePage("invoice");
+                  }}
                 >
                   <i className="fas fa-file-invoice" style={{ fontSize: 15 }} />
                   <span className="nav-link-text ms-2 ps-1">Invoice</span>
@@ -157,11 +170,14 @@ export default function Admin() {
             </ul>
           </div>
         </aside>
-        <main className="main-content position-relatives max-height-vh-100 h-100 border-radius-lg" style={{width: "100%", marginLeft: "150px"}} >
+        <main
+          className="main-content position-relatives max-height-vh-100 h-100 border-radius-lg"
+          style={{ width: "100%", marginLeft: "150px" }}
+        >
           <div
             data-tauri-drag-region
             className="titlebar"
-            style={{ backgroundColor: "#1875be"}}
+            style={{ backgroundColor: "#1875be" }}
           >
             <div className="titlebar-button" id="titlebar-minimize">
               <img
@@ -175,7 +191,7 @@ export default function Admin() {
           </div>
           <div
             className="container-fluid py-4"
-            style={{ display: "block", position: "relative",}}
+            style={{ display: "block", position: "relative" }}
           >
             <div id="dashboard" className="admin_pages">
               <h4
@@ -416,7 +432,10 @@ export default function Admin() {
                                   type="number"
                                   className="form-control"
                                   id="number_of_bags"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="text-center">
@@ -485,9 +504,9 @@ export default function Admin() {
                   boxShadow: "0 0 3px #647489bd",
                   marginBottom: 0,
                   marginLeft: 50,
-
                 }}
-              ></div>
+              >
+              </div>
               <div
                 style={{
                   height: 80,
@@ -553,7 +572,10 @@ export default function Admin() {
                                   id="in_SalesType"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -563,7 +585,10 @@ export default function Admin() {
                                   id="in_Quantity"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -575,7 +600,10 @@ export default function Admin() {
                                   id="in_CustomerName"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -587,7 +615,10 @@ export default function Admin() {
                                   id="in_CustomerPhone"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -599,7 +630,10 @@ export default function Admin() {
                                   id="in_CustomerAddress"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -611,7 +645,10 @@ export default function Admin() {
                                   id="in_AmountPaid"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -623,7 +660,10 @@ export default function Admin() {
                                   id="in_DispatchId"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               {/* <div class='form-group'>
@@ -782,7 +822,10 @@ export default function Admin() {
                                   id="in_FirstName"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -792,7 +835,10 @@ export default function Admin() {
                                   id="in_LastName"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -804,7 +850,10 @@ export default function Admin() {
                                   id="in_PhoneNumber"
                                   className="form-control"
                                   type="tel"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -816,7 +865,10 @@ export default function Admin() {
                                   id="in_BikeNumberPlate"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -828,7 +880,10 @@ export default function Admin() {
                                   id="in_RidersLicense"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="text-center">
@@ -969,7 +1024,10 @@ export default function Admin() {
                                   id="in_StaffFirstName"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -981,7 +1039,10 @@ export default function Admin() {
                                   id="in_StaffLastName"
                                   className="form-control"
                                   type="text"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -993,7 +1054,10 @@ export default function Admin() {
                                   id="in_StaffPhone"
                                   className="form-control"
                                   type="tel"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -1003,7 +1067,10 @@ export default function Admin() {
                                   id="in_StaffRole"
                                   className="form-control"
                                   type="tel"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -1015,7 +1082,10 @@ export default function Admin() {
                                   id="in_DateCreated"
                                   className="form-control"
                                   type="datetime"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="form-group">
@@ -1027,7 +1097,10 @@ export default function Admin() {
                                   id="in_StaffPassword"
                                   className="form-control"
                                   type="password"
-                                  style={{ borderRadius: "5px", border: "1px solid black"}}
+                                  style={{
+                                    borderRadius: "5px",
+                                    border: "1px solid black",
+                                  }}
                                 />
                               </div>
                               <div className="text-center">
@@ -1147,6 +1220,7 @@ export default function Admin() {
                         </p>
                         <br />
                         <hr className="horizontal my-0 dark" />
+                        <p className="text-sm mb-0 text-capitalize ">10.00</p>
                         <h4 className="mb-0 " id="amount_sold" />
                       </div>
                     </div>
@@ -1199,6 +1273,7 @@ export default function Admin() {
                         </p>
                         <br />
                         <hr className="horizontal my-0 dark" />
+                        <p className="text-sm mb-0 text-capitalize ">0.05</p>
                         <h4 className="mb-0 " id="bags_left" />
                       </div>
                     </div>
@@ -1229,6 +1304,26 @@ export default function Admin() {
                     </div>
                   </div>
                 </div>
+                <div
+                  className="nav-item"
+                  style={{ cursor: "pointer", marginTop: "70px" }}
+                >
+                  <button
+                    id
+                    style={{
+                      marginRight: 20,
+                      color: "azure",
+                      borderRadius: 8,
+                      marginTop: 7,
+                      backgroundColor: "#1875be"
+                    }}
+                    type="button"
+                    onClick={{}}
+                  >
+                    Compute
+                  </button>
+                </div>
+                
               </div>
             </div>
           </div>
